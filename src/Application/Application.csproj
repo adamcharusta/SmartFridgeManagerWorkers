@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <RootNamespace>SmartFridgeManagerWorkers.Application</RootNamespace>
+    <AssemblyName>SmartFridgeManagerWorkers.Application</AssemblyName>
+
+    <UserSecretsId>dotnet-Application-B200A1A6-19FF-4A58-BAD1-1E970B4D9C03</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmailWorker\EmailWorker.csproj"/>
+  </ItemGroup>
+</Project>

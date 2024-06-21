@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SmartFridgeManagerWorkers.FunctionalTests</RootNamespace>
+    <AssemblyName>SmartFridgeManagerWorkers.FunctionalTests</AssemblyName>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector"/>
+    <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+    <PackageReference Include="xunit"/>
+    <PackageReference Include="xunit.runner.visualstudio"/>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Application\Application.csproj"/>
+    <ProjectReference Include="..\..\src\EmailWorker\EmailWorker.csproj"/>
+  </ItemGroup>
+
+</Project>
